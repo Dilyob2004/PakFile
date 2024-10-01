@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ThirdParty">
+      <UniqueIdentifier>{e4a14298-4984-4bca-a5fd-f68f562fdcdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PakFile">
+      <UniqueIdentifier>{6d0b363e-2905-4df8-b7a7-c6cb503ea328}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\lz4">
+      <UniqueIdentifier>{a2372835-ddd3-4458-a101-4c84d61a6f8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\openssl">
+      <UniqueIdentifier>{1f2ca85a-0832-41a3-bd8f-8b9eb099463f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\zlib">
+      <UniqueIdentifier>{c3afd958-b85b-4954-bde2-03e730f911f1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ThirdParty\openssl\__DECC_INCLUDE_EPILOGUE.H">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\__DECC_INCLUDE_PROLOGUE.H">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\aes.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\asn1.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\asn1_mac.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\asn1err.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\asn1t.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\async.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\asyncerr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\bio.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\bioerr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\blowfish.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\bn.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\bnerr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\buffer.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\buffererr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\camellia.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\cast.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\cmac.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\cmp.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\cmp_util.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\cmperr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\cms.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\cmserr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\comp.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\comperr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\conf.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\conf_api.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\conferr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\configuration.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\conftypes.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\core.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\core_dispatch.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\core_names.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\core_object.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\crmf.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\crmferr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\crypto.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\cryptoerr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\cryptoerr_legacy.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\ct.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\cterr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\decoder.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\decodererr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\des.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\dh.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\dherr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\dsa.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\dsaerr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\dtls1.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\e_os2.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\e_ostime.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\ebcdic.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\ec.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\ecdh.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\ecdsa.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\ecerr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\encoder.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\encodererr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\engine.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\engineerr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\err.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\ess.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\esserr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\evp.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\evperr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\fips_names.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\fipskey.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\hmac.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\hpke.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\http.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\httperr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\idea.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\kdf.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\kdferr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\lhash.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\macros.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\md2.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\md4.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\md5.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\mdc2.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\modes.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\obj_mac.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\objects.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\objectserr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\ocsp.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\ocsperr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\opensslconf.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\opensslv.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\ossl_typ.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\param_build.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\params.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\pem.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\pem2.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\pemerr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\pkcs7.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\pkcs7err.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\pkcs12.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\pkcs12err.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\prov_ssl.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\proverr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\provider.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\quic.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\rand.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\randerr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\rc2.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\rc4.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\rc5.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\ripemd.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\rsa.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\rsaerr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\safestack.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\seed.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\self_test.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\sha.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\srp.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\srtp.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\ssl.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\ssl2.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\ssl3.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\sslerr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\sslerr_legacy.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\stack.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\store.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\storeerr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\symhacks.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\thread.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\tls1.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\trace.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\ts.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\tserr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\txt_db.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\types.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\ui.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\uierr.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\whrlpool.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\x509.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\x509_vfy.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\x509err.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\x509v3.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\openssl\x509v3err.h">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\zlib\zconf.h">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\zlib\zlib.h">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\lz4\lz4.h">
+      <Filter>ThirdParty\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\lz4\lz4file.h">
+      <Filter>ThirdParty\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\lz4\lz4frame.h">
+      <Filter>ThirdParty\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\lz4\lz4frame_static.h">
+      <Filter>ThirdParty\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\lz4\lz4hc.h">
+      <Filter>ThirdParty\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\lz4\xxhash.h">
+      <Filter>ThirdParty\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="Compression.h">
+      <Filter>PakFile</Filter>
+    </ClInclude>
+    <ClInclude Include="Crypto.h">
+      <Filter>PakFile</Filter>
+    </ClInclude>
+    <ClInclude Include="PakFile.h">
+      <Filter>PakFile</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ThirdParty\openssl\applink.c">
+      <Filter>ThirdParty\openssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\lz4\lz4.c">
+      <Filter>ThirdParty\lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\lz4\lz4file.c">
+      <Filter>ThirdParty\lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\lz4\lz4frame.c">
+      <Filter>ThirdParty\lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\lz4\lz4hc.c">
+      <Filter>ThirdParty\lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\lz4\xxhash.c">
+      <Filter>ThirdParty\lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="Compression.cpp">
+      <Filter>PakFile</Filter>
+    </ClCompile>
+    <ClCompile Include="Crypto.cpp">
+      <Filter>PakFile</Filter>
+    </ClCompile>
+    <ClCompile Include="PakFile.cpp">
+      <Filter>PakFile</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>PakFile</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

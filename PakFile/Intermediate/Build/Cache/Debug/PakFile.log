@@ -1,0 +1,5 @@
+﻿  PakFile.cpp
+D:\Engines\Github\PakFile\PakFile\PakFile\PakFile.cpp(63,122): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
+D:\Engines\Github\PakFile\PakFile\PakFile\PakFile.cpp(94,81): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
+D:\Engines\Github\PakFile\PakFile\PakFile\PakFile.cpp(217,92): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
+  PakFile.vcxproj -> D:\Engines\Github\PakFile\PakFile\Binaries\Debug\PakFile.exe

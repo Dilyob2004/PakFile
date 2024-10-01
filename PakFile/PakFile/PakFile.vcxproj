@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{f374c01f-cdd6-4f92-867f-036f1c7a74ba}</ProjectGuid>
+    <RootNamespace>PakFile</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)Binaries\Debug\</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\Build\Cache\Debug\</IntDir>
+    <TargetName>PakFile</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)ThirdParty\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Intermediate\Build\Windows\Debug</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Crypt32.lib;Ws2_32.lib;libcrypto_static.lib;libssl_static.lib;zlibstatic.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ThirdParty\lz4\lz4.h" />
+    <ClInclude Include="..\ThirdParty\lz4\lz4file.h" />
+    <ClInclude Include="..\ThirdParty\lz4\lz4frame.h" />
+    <ClInclude Include="..\ThirdParty\lz4\lz4frame_static.h" />
+    <ClInclude Include="..\ThirdParty\lz4\lz4hc.h" />
+    <ClInclude Include="..\ThirdParty\lz4\xxhash.h" />
+    <ClInclude Include="..\ThirdParty\openssl\aes.h" />
+    <ClInclude Include="..\ThirdParty\openssl\asn1.h" />
+    <ClInclude Include="..\ThirdParty\openssl\asn1err.h" />
+    <ClInclude Include="..\ThirdParty\openssl\asn1t.h" />
+    <ClInclude Include="..\ThirdParty\openssl\asn1_mac.h" />
+    <ClInclude Include="..\ThirdParty\openssl\async.h" />
+    <ClInclude Include="..\ThirdParty\openssl\asyncerr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\bio.h" />
+    <ClInclude Include="..\ThirdParty\openssl\bioerr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\blowfish.h" />
+    <ClInclude Include="..\ThirdParty\openssl\bn.h" />
+    <ClInclude Include="..\ThirdParty\openssl\bnerr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\buffer.h" />
+    <ClInclude Include="..\ThirdParty\openssl\buffererr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\camellia.h" />
+    <ClInclude Include="..\ThirdParty\openssl\cast.h" />
+    <ClInclude Include="..\ThirdParty\openssl\cmac.h" />
+    <ClInclude Include="..\ThirdParty\openssl\cmp.h" />
+    <ClInclude Include="..\ThirdParty\openssl\cmperr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\cmp_util.h" />
+    <ClInclude Include="..\ThirdParty\openssl\cms.h" />
+    <ClInclude Include="..\ThirdParty\openssl\cmserr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\comp.h" />
+    <ClInclude Include="..\ThirdParty\openssl\comperr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\conf.h" />
+    <ClInclude Include="..\ThirdParty\openssl\conferr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\configuration.h" />
+    <ClInclude Include="..\ThirdParty\openssl\conftypes.h" />
+    <ClInclude Include="..\ThirdParty\openssl\conf_api.h" />
+    <ClInclude Include="..\ThirdParty\openssl\core.h" />
+    <ClInclude Include="..\ThirdParty\openssl\core_dispatch.h" />
+    <ClInclude Include="..\ThirdParty\openssl\core_names.h" />
+    <ClInclude Include="..\ThirdParty\openssl\core_object.h" />
+    <ClInclude Include="..\ThirdParty\openssl\crmf.h" />
+    <ClInclude Include="..\ThirdParty\openssl\crmferr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\crypto.h" />
+    <ClInclude Include="..\ThirdParty\openssl\cryptoerr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\cryptoerr_legacy.h" />
+    <ClInclude Include="..\ThirdParty\openssl\ct.h" />
+    <ClInclude Include="..\ThirdParty\openssl\cterr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\decoder.h" />
+    <ClInclude Include="..\ThirdParty\openssl\decodererr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\des.h" />
+    <ClInclude Include="..\ThirdParty\openssl\dh.h" />
+    <ClInclude Include="..\ThirdParty\openssl\dherr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\dsa.h" />
+    <ClInclude Include="..\ThirdParty\openssl\dsaerr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\dtls1.h" />
+    <ClInclude Include="..\ThirdParty\openssl\ebcdic.h" />
+    <ClInclude Include="..\ThirdParty\openssl\ec.h" />
+    <ClInclude Include="..\ThirdParty\openssl\ecdh.h" />
+    <ClInclude Include="..\ThirdParty\openssl\ecdsa.h" />
+    <ClInclude Include="..\ThirdParty\openssl\ecerr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\encoder.h" />
+    <ClInclude Include="..\ThirdParty\openssl\encodererr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\engine.h" />
+    <ClInclude Include="..\ThirdParty\openssl\engineerr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\err.h" />
+    <ClInclude Include="..\ThirdParty\openssl\ess.h" />
+    <ClInclude Include="..\ThirdParty\openssl\esserr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\evp.h" />
+    <ClInclude Include="..\ThirdParty\openssl\evperr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\e_os2.h" />
+    <ClInclude Include="..\ThirdParty\openssl\e_ostime.h" />
+    <ClInclude Include="..\ThirdParty\openssl\fipskey.h" />
+    <ClInclude Include="..\ThirdParty\openssl\fips_names.h" />
+    <ClInclude Include="..\ThirdParty\openssl\hmac.h" />
+    <ClInclude Include="..\ThirdParty\openssl\hpke.h" />
+    <ClInclude Include="..\ThirdParty\openssl\http.h" />
+    <ClInclude Include="..\ThirdParty\openssl\httperr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\idea.h" />
+    <ClInclude Include="..\ThirdParty\openssl\kdf.h" />
+    <ClInclude Include="..\ThirdParty\openssl\kdferr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\lhash.h" />
+    <ClInclude Include="..\ThirdParty\openssl\macros.h" />
+    <ClInclude Include="..\ThirdParty\openssl\md2.h" />
+    <ClInclude Include="..\ThirdParty\openssl\md4.h" />
+    <ClInclude Include="..\ThirdParty\openssl\md5.h" />
+    <ClInclude Include="..\ThirdParty\openssl\mdc2.h" />
+    <ClInclude Include="..\ThirdParty\openssl\modes.h" />
+    <ClInclude Include="..\ThirdParty\openssl\objects.h" />
+    <ClInclude Include="..\ThirdParty\openssl\objectserr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\obj_mac.h" />
+    <ClInclude Include="..\ThirdParty\openssl\ocsp.h" />
+    <ClInclude Include="..\ThirdParty\openssl\ocsperr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\opensslconf.h" />
+    <ClInclude Include="..\ThirdParty\openssl\opensslv.h" />
+    <ClInclude Include="..\ThirdParty\openssl\ossl_typ.h" />
+    <ClInclude Include="..\ThirdParty\openssl\params.h" />
+    <ClInclude Include="..\ThirdParty\openssl\param_build.h" />
+    <ClInclude Include="..\ThirdParty\openssl\pem.h" />
+    <ClInclude Include="..\ThirdParty\openssl\pem2.h" />
+    <ClInclude Include="..\ThirdParty\openssl\pemerr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\pkcs12.h" />
+    <ClInclude Include="..\ThirdParty\openssl\pkcs12err.h" />
+    <ClInclude Include="..\ThirdParty\openssl\pkcs7.h" />
+    <ClInclude Include="..\ThirdParty\openssl\pkcs7err.h" />
+    <ClInclude Include="..\ThirdParty\openssl\proverr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\provider.h" />
+    <ClInclude Include="..\ThirdParty\openssl\prov_ssl.h" />
+    <ClInclude Include="..\ThirdParty\openssl\quic.h" />
+    <ClInclude Include="..\ThirdParty\openssl\rand.h" />
+    <ClInclude Include="..\ThirdParty\openssl\randerr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\rc2.h" />
+    <ClInclude Include="..\ThirdParty\openssl\rc4.h" />
+    <ClInclude Include="..\ThirdParty\openssl\rc5.h" />
+    <ClInclude Include="..\ThirdParty\openssl\ripemd.h" />
+    <ClInclude Include="..\ThirdParty\openssl\rsa.h" />
+    <ClInclude Include="..\ThirdParty\openssl\rsaerr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\safestack.h" />
+    <ClInclude Include="..\ThirdParty\openssl\seed.h" />
+    <ClInclude Include="..\ThirdParty\openssl\self_test.h" />
+    <ClInclude Include="..\ThirdParty\openssl\sha.h" />
+    <ClInclude Include="..\ThirdParty\openssl\srp.h" />
+    <ClInclude Include="..\ThirdParty\openssl\srtp.h" />
+    <ClInclude Include="..\ThirdParty\openssl\ssl.h" />
+    <ClInclude Include="..\ThirdParty\openssl\ssl2.h" />
+    <ClInclude Include="..\ThirdParty\openssl\ssl3.h" />
+    <ClInclude Include="..\ThirdParty\openssl\sslerr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\sslerr_legacy.h" />
+    <ClInclude Include="..\ThirdParty\openssl\stack.h" />
+    <ClInclude Include="..\ThirdParty\openssl\store.h" />
+    <ClInclude Include="..\ThirdParty\openssl\storeerr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\symhacks.h" />
+    <ClInclude Include="..\ThirdParty\openssl\thread.h" />
+    <ClInclude Include="..\ThirdParty\openssl\tls1.h" />
+    <ClInclude Include="..\ThirdParty\openssl\trace.h" />
+    <ClInclude Include="..\ThirdParty\openssl\ts.h" />
+    <ClInclude Include="..\ThirdParty\openssl\tserr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\txt_db.h" />
+    <ClInclude Include="..\ThirdParty\openssl\types.h" />
+    <ClInclude Include="..\ThirdParty\openssl\ui.h" />
+    <ClInclude Include="..\ThirdParty\openssl\uierr.h" />
+    <ClInclude Include="..\ThirdParty\openssl\whrlpool.h" />
+    <ClInclude Include="..\ThirdParty\openssl\x509.h" />
+    <ClInclude Include="..\ThirdParty\openssl\x509err.h" />
+    <ClInclude Include="..\ThirdParty\openssl\x509v3.h" />
+    <ClInclude Include="..\ThirdParty\openssl\x509v3err.h" />
+    <ClInclude Include="..\ThirdParty\openssl\x509_vfy.h" />
+    <ClInclude Include="..\ThirdParty\openssl\__DECC_INCLUDE_EPILOGUE.H" />
+    <ClInclude Include="..\ThirdParty\openssl\__DECC_INCLUDE_PROLOGUE.H" />
+    <ClInclude Include="..\ThirdParty\zlib\zconf.h" />
+    <ClInclude Include="..\ThirdParty\zlib\zlib.h" />
+    <ClInclude Include="Compression.h" />
+    <ClInclude Include="Crypto.h" />
+    <ClInclude Include="PakFile.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ThirdParty\lz4\lz4.c" />
+    <ClCompile Include="..\ThirdParty\lz4\lz4file.c" />
+    <ClCompile Include="..\ThirdParty\lz4\lz4frame.c" />
+    <ClCompile Include="..\ThirdParty\lz4\lz4hc.c" />
+    <ClCompile Include="..\ThirdParty\lz4\xxhash.c" />
+    <ClCompile Include="..\ThirdParty\openssl\applink.c" />
+    <ClCompile Include="Compression.cpp" />
+    <ClCompile Include="Crypto.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="PakFile.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
